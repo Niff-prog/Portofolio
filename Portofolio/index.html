@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+
+    <style>
+      .sidebar {
+        background-color: var(--tan-soft);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px;
+      }
+
+      .content {
+        background-color: var(--cream);
+        padding: 60px;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        min-height: 100vh;
+        color: var(--cocoa-deep);
+      }
+
+      .foto {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .badge {
+        background-color: var(--cream);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+      }
+
+      .tombol {
+        display: inline-block;
+        background-color: var(--cocoa);
+        color: white;
+        padding: 12px 28px;
+        border-radius: 999px;
+        text-decoration: none;
+      }
+
+      nav {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .label {
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      .judul {
+        font-size: 48px;
+        line-height: 1.2;
+      }
+
+      .pengantar {
+        font-size: 17px;
+        color: gray;
+      }
+
+      .judul em {
+        color: #6b4226;
+        font-style: italic;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .tag {
+        background-color: var(--cocoa);
+        color: white;
+        padding: 8px 18px;
+        border-radius: 999px;
+        font-size: 13px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 16px;
+      }
+
+      .social-links i {
+        font-size: 20px;
+      }
+
+      .social-links a {
+        color: var(--cocoa);
+      }
+
+      :root {
+        --cream: #faf6f0;
+        --cocoa: #6b4226;
+        --cocoa-deep: #4a2c17;
+        --tan-soft: #e8d9c3;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <img src="images/pp.png" alt="photo profil" class="foto" />
+      <h2>
+        <i><b>- NAMA Saya -</b></i>
+      </h2>
+      <p>Musyrif</p>
+      <p>Lokasimu</p>
+      <span class="badge">Terbuka untuk kolaborasi</span>
+      <a href="mailto:emailkamu@ymail.com" class="tombol">Kirim Pesan</a>
+    </aside>
+
+    <main class="content">
+      <nav>
+        <a href="#about">Tentangku</a>
+        <a href="#skills">Skill</a>
+        <a href="#work">Karya</a>
+        <a href="#experience">Perjalananku</a>
+        <a href="#contact">Akunku</a>
+      </nav>
+
+
+      <p class="label">Jabatan atau bidangmu</p>
+      <h1 class="judul">satu kalimat tentang dirimu <em>kata kunci</em></h1>
+      <p class="pengantar">1-2 kalimat lebih detail tentang apa yang kamu bangun</p>
+
+      <section id="about">
+        <h2>Tentang Aku</h2>
+        <p>Tulis cerita singkat tentang dirimu di sini</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum non esse nisi praesentium eos laborum accusantium vitae, ratione consequuntur similique ex maxime reiciendis inventore et hic blanditiis in amet?</p>
+      </section>
+
+      <section id="skills">
+        <h2>Keahlian</h2>
+        <div class="tags">
+          <span class="tag">Skill 1</span>
+          <span class="tag">Skill 2</span>
+          <span class="tag">Skill 3</span>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>Karya</h2>
+        <div class="work-card">
+          <h3>Judul Karya 1</h3>
+          <p>Deskripsi singkar karya ini.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, accusamus harum voluptates quos nesciunt voluptatum debitis soluta? Expedita aliquid sunt, tenetur quod quae illo similique, eligendi fugiat optio error tempora!</p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Perjalananku</h2>
+        <p>Ceritakan pengalamanmu atau perjalananmu di sini</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempore explicabo, rerum assumenda consequatur commodi modi voluptates ab ducimus rem, soluta molestiae et. Earum explicabo cum similique expedita illo aliquid?</p>
+      </section>
+
+      <section id="contact">
+        <h2>Akunku</h2>
+        <div class="social-links">
+          <a href="https://www.google.com/" target="_blank"><i class='bx bxl-instagram'>Instagram</i></a>
+          <a href="https://github.com/" target="_blank"><i class='bx bxl-github '>Github</i></a>
+        </div>
+      </section>
+      <!-- aku ingin di conntact ku ada logo ig yang bisa langsugn mengarah ke igku, github  ddl -->
+    </main>
+  </body>
+</html>
